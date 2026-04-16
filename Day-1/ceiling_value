@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<math.h>
+int main() {
+    double num;
+    printf("enter a number (positive or negative):");
+    scanf("%lf", &num);
+    printf("number = %.2f", num);
+    printf("floor value = %.2f\n", floor(num));
+    printf("ceiling value = %.2f\n", ceil(num));
+    
+    return 0;
+    
+}

@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main() {
+    char coin;
+    printf("enter the result of coin toss (h for head, t for tail):");
+    scanf("%c", &coin);
+    if(coin == 'h') {
+        printf("it is head");
+    }
+    else if(coin == 't') {
+        printf("it is tail");
+    }
+    
+    return 0;
+}
