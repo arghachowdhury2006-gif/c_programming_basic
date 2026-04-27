@@ -1,0 +1,12 @@
+fi#include<stdio.h>
+int main() {
+	int number,lastdigit;
+	printf("enter number");
+	scanf("%d",&number);
+	if (number<0) {
+		number = -number;
+	}
+	lastdigit = number-(number/10)*10;
+	printf("the lastdigit is = %d\n",lastdigit);
+	return 0;
+}
