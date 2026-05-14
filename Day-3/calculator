@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main() {
+    
+   char operater;
+   float x,y,z;
+   printf("enter operater ('+', '-', '*', '/')");
+   scanf("%c", &operater);
+   printf("enter x");
+   scanf("%f", &x);
+   printf("enter y");
+   scanf("%f", &y);
+   switch(operater) {
+   	case'+':
+   	z = x + y;
+   	printf("%.2f + %.2f = %.2f\n", x, y, z);
+   	break;
+   	case'-':
+   	z = x - y;
+   	printf("%.2f - %.2f = %.2f\n", x, y, z);
+   	break;
+   	case'*':
+   	z = x * y;
+   	printf("%.2f * %.2f = %.2f\n", x, y, z);
+   	break;
+   	case'/':
+   	z = x / y;
+   	printf("%.2f / %.2f = %.2f\n", x, y, z);
+   	break;
+   	default:
+   		printf("invalid operater");
+   }
+   
+   
+    return 0;
+}
